@@ -1,0 +1,17 @@
+{
+  "name": "gRPC-node-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gorkhali125/gRPC-node-example.git",
+  "author": "gorkhali125 <deepeshkhanal@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "proto:generate": "./proto-generator.sh"
+  },
+  "devDependencies": {
+    "@grpc/grpc-js": "^1.8.15",
+    "@grpc/proto-loader": "^0.7.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
