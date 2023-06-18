@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package examplePackage;
+
+service Example {
+    rpc PingPong (PingRequest) returns (PingResponse) {}; // Unary Call
+}
+
+message PingRequest {
+    string message = 1;
+}
+
+message PingResponse {
+    string message = 1;
+}
