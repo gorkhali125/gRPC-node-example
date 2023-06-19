@@ -5,6 +5,7 @@ package examplePackage;
 service Example {
     rpc PingPong (PingRequest) returns (PingResponse) {}; // Unary Call
     rpc RandomNumbers(NumberRequest) returns (stream NumberResponse) {}; // Server Streaming Call
+    rpc TodoList(stream TodoRequest) returns (TodoResponse) {};// Client Streaming Call
 }
 
 message PingRequest {
@@ -21,4 +22,13 @@ message NumberRequest {
 
 message NumberResponse {
     int32 num = 1;
+}
+
+message TodoRequest {
+    string todo = 1;
+    string status = 2;
+}
+
+message TodoResponse {
+    repeated TodoRequest todos = 1; 
 }
