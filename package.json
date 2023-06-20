@@ -6,7 +6,8 @@
   "author": "gorkhali125 <deepeshkhanal@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "proto:generate": "./proto-generator.sh"
+    "proto:generate": "./proto-generator.sh",
+    "server": "ts-node server"
   },
   "devDependencies": {
     "@grpc/grpc-js": "^1.8.15",
