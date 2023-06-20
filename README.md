@@ -1,5 +1,5 @@
 # gRPC Example in Node/Typescript
-gRPC is a modern open source high performance (Google) Remote Procedure Call (RPC) framework that can run in any environment. gRPC uses `profobuf` which is **Protocol Buffers** as a data format used to serialize structured data.
+gRPC is a modern open source high performance (Google) Remote Procedure Call (RPC) framework that can run in any environment. gRPC uses `protobuf` which is **Protocol Buffers** as a data format used to serialize structured data.
 
 This repository is an example of gRPC server and client written with node and typescript. This example covers only the following streaming methods available in gRPC:
 1. Unary RPC Call
